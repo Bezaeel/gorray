@@ -14,7 +14,7 @@ func setConfiguration(configPath string){
 
 func Run(configPath string) {
 	if configPath == "" {
-		configPath = "config/"
+		configPath = "../../config/"
 	}
 	setConfiguration(configPath)
 	conf := config.GetConfig()
