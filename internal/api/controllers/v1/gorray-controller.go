@@ -137,7 +137,7 @@ func Echo(c *gin.Context) {
 		communication.NewError(
 			c, 
 			http.StatusInternalServerError, 
-			errors.New("error: unable to process request at this time"),
+			errors.New("error: invalid file format"),
 		)
 	}
 	result := s.Echo(records)
