@@ -38,10 +38,10 @@ func Setup() *gin.Engine {
 
 	// Routes
 	// ================== Gorray Routes
-	app.POST("/api/v1/echo", controller.Echo)
-	app.POST("/api/v1/transpose", controller.Transpose)
-	app.POST("/api/v1/flatten", controller.Flatten)
-	app.POST("/api/v1/sum", controller.Sum)
-	app.POST("/api/v1/multiply", controller.Multiply)
+	app.GET("/api/v1/echo", controller.Echo)
+	app.GET("/api/v1/transpose", controller.Transpose)
+	app.GET("/api/v1/flatten", controller.Flatten)
+	app.GET("/api/v1/sum", controller.Sum)
+	app.GET("/api/v1/multiply", controller.Multiply)
 	return app
 }
